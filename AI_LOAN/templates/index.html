@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Flower Identification</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>IDENTIFICATION OF IRIS FLOWERS</h1>
+        <form action="/predict" method="POST" class="iris-form">
+            <div class="form-group">
+                <label for="sepal-length">Sepal Length (cm)</label>
+                <input type="number" step="0.1" id="sepal-length" name="SL" placeholder="Enter sepal length" required>
+            </div>
+            <div class="form-group">
+                <label for="sepal-width">Sepal Width (cm)</label>
+                <input type="number" step="0.1" id="sepal-width" name="SW" placeholder="Enter sepal width" required>
+            </div>
+            <div class="form-group">
+                <label for="petal-length">Petal Length (cm)</label>
+                <input type="number" step="0.1" id="petal-length" name="PL" placeholder="Enter petal length" required>
+            </div>
+            <div class="form-group">
+                <label for="petal-width">Petal Width (cm)</label>
+                <input type="number" step="0.1" id="petal-width" name="PW" placeholder="Enter petal width" required>
+            </div>
+            <button type="submit" class="submit-btn">Identify Flower</button>
+        </form>
+    </div>
+</body>
+</html>
